@@ -21,7 +21,6 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
 }
 
 /*Botões*/
@@ -62,6 +61,15 @@ h1, h2, h3, h4 {
   color: white;
   z-index: 100;
 }
+  .barra-navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  position: absolute; 
+  width: 100%;
+  color: white;
+  z-index: 100;
 
 .logo {
   display: flex;
@@ -82,6 +90,7 @@ h1, h2, h3, h4 {
   list-style: none;
   gap: 30px;
   font-size: 15px;
+}
 }
 
 /*Principal*/
@@ -105,10 +114,10 @@ h1, h2, h3, h4 {
 .conteudo-banner {
   position: relative;
   z-index: 2;
-  color: white;
+  color: white; 
 }
 .conteudo-banner h1 {
-  font-size: 4rem;
+  font-size: 64px;
   margin-bottom: 20px;
 }
 .conteudo-banner i {
@@ -125,7 +134,7 @@ h1, h2, h3, h4 {
   margin-bottom: 50px;
 }
 .cabecalho-seccao h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
@@ -160,17 +169,17 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 .info-animal h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 .tipo-animal {
-  font-size: 0.8rem;
+  font-size: 13px;
   text-transform: uppercase;
   color: gray;
   margin-bottom: 10px;
 }
 .descricao-animal {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #555;
   margin-bottom: 15px;
 }
@@ -190,17 +199,17 @@ h1, h2, h3, h4 {
 }
 .texto-missao .subtitulo {
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 13px;
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
 .texto-missao h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 .texto-missao p {
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.6;
 }
 .imagem-missao {
@@ -223,15 +232,15 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 60px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
   padding-bottom: 40px;
 }
 .coluna-rodape h4 {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 .coluna-rodape p, .coluna-rodape li {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #333;
   margin-bottom: 10px;
 }
@@ -246,7 +255,7 @@ h1, h2, h3, h4 {
   list-style: none;
 }
 .coluna-formulario {
-  max-width: 350px;
+  max-width: 850px;
 }
 .formulario-boletim {
   display: flex;
@@ -255,7 +264,7 @@ h1, h2, h3, h4 {
 }
 .formulario-boletim input {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #eee59a;
   background: transparent;
   flex: 1;
   border-radius: 4px;
@@ -265,13 +274,13 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 .logo-gigante {
-  font-size: 8vw; 
+  font-size: 128px; 
   font-family: 'Playfair Display', serif;
   color: var(--texto-escuro);
   margin-bottom: 10px;
   line-height: 1;
 }
 .rodape-fundo p {
-  font-size: 0.8rem;
+  font-size: 13px;
   color: #444;
 }
