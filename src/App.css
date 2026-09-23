@@ -1,38 +1,277 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  --cor-fundo: #f5f4ef; 
+  --cor-principal: #929d84; 
+  --texto-escuro: #2b3324; 
+  --cor-destaque: #f7e7a8; 
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--texto-escuro);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+/*Botões*/
+.botao-principal {
+  background-color: var(--cor-destaque);
+  color: var(--texto-escuro);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.botao-principal:hover { opacity: 0.8; }
+
+.botao-secundario {
+  background-color: var(--cor-principal);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.botao-secundario:hover { opacity: 0.8; }
+
+/*Barra de navegação*/
+.barra-navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  position: absolute; 
+  width: 100%;
+  color: white;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.imagem-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.links-navegacao {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 15px;
+}
+
+/*Principal*/
+.seccao-banner {
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
+}
+.seccao-banner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3); 
+}
+.conteudo-banner {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.conteudo-banner h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.conteudo-banner i {
+  font-style: italic;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Pets*/
+.seccao-animais {
+  padding: 80px 5%;
+  background-color: var(--cor-fundo);
+}
+.cabecalho-seccao {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.cabecalho-seccao h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grade-animais {
+  display: flex; 
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cartao-animal {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.contentor-imagem {
+  height: 250px;
+  width: 100%;
+}
+.contentor-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+.info-animal {
+  padding: 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.info-animal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.tipo-animal {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: gray;
+  margin-bottom: 10px;
+}
+.descricao-animal {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/*Saiba mais*/
+.seccao-missao {
+  display: flex; 
+  background-color: #d1d8cc; 
+  min-height: 500px;
+}
+.texto-missao {
+  flex: 1; 
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.texto-missao .subtitulo {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.texto-missao h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.texto-missao p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.imagem-missao {
+  flex: 1;
+}
+.imagem-missao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.App-link {
-  color: #61dafb;
+/*Rodapé*/
+.seccao-rodape {
+  background-color: var(--cor-principal);
+  padding: 60px 5% 30px;
+}
+.rodape-topo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 40px;
+}
+.coluna-rodape h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.coluna-rodape p, .coluna-rodape li {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.coluna-sobre {
+  max-width: 250px;
+}
+.coluna-links {
+  display: flex;
+  gap: 50px;
+}
+.coluna-links ul {
+  list-style: none;
+}
+.coluna-formulario {
+  max-width: 350px;
+}
+.formulario-boletim {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.formulario-boletim input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: transparent;
+  flex: 1;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rodape-fundo {
+  text-align: center;
+}
+.logo-gigante {
+  font-size: 8vw; 
+  font-family: 'Playfair Display', serif;
+  color: var(--texto-escuro);
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.rodape-fundo p {
+  font-size: 0.8rem;
+  color: #444;
 }
