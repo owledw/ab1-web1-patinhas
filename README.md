@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 🐾 Patinhas - Plataforma de Adoção de Animais
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O **Patinhas** é um sistema web voltado para conectar animais disponíveis para adoção a potenciais adotantes conscientes no município de Penedo (AL). O projeto visa centralizar a divulgação de cães e gatos resgatados, otimizando o trabalho de ONGs e protetores independentes da região.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Sobre o Projeto & Motivação
 
-### `npm start`
+A motivação para a criação desta plataforma nasceu da vivência próxima com organizações não governamentais e protetores independentes de animais em Penedo, acompanhando a rotina ao lado da protetora **Edvania Costa** na busca por abrigar e encontrar lares seguros para animais de rua.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Um dos maiores desafios enfrentados pela causa animal local é a dependência exclusiva de redes sociais pessoais para divulgação. As restrições dos algoritmos limitam o alcance das publicações, o que resulta em:
+* Superlotação de lares temporários;
+* Acúmulo de custos financeiros para os protetores;
+* Processos de triagem informais e pouco eficientes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A plataforma **Patinhas** surge como uma solução digital centralizada e acessível para dar visibilidade aos animais resgatados, dar agilidade ao fluxo de adoção e conscientizar a população.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Status do Projeto e Funcionalidades
 
-### `npm run build`
+### ⚙️ Fase Atual (Protótipo Inicial)
+- Interface gráfica desenvolvida em **React** utilizando componentes flexíveis e responsivos.
+- Listagem dinâmica e apresentação básica dos animais cadastrados.
+- Estilização moderna com **CSS3 (Flexbox e Variáveis Globais)**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔮 Próximas Etapas e Aprimoramentos
+- **Fichas Técnicas Detalhadas:** Informações sobre porte, idade, estado de saúde e perfil comportamental de cada pet.
+- **Filtros e Busca:** Ferramentas para que os visitantes encontrem animais com base em suas preferências.
+- **Área Restrita (Dashboard):** Painel para que protetores gerenciem cadastros e acompanhem o status dos processos de adoção.
+- **Formulário de Triagem Integrado:** Automatização da triagem inicial para potenciais adotantes.
+- **Seção Educativa:** Conteúdos focados na conscientização sobre a posse responsável de animais.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm run eject`
+- **[React](https://reactjs.org/)** — Biblioteca para construção da interface de usuário.
+- **JavaScript (ES6+)** — Lógica da aplicação.
+- **CSS3** — Estilização, layout responsivo com Flexbox e variáveis globais.
+- **HTML5 (JSX)** — Estruturação semântica.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💻 Como Executar o Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 📋 Pré-requisitos
+Antes de começar, você precisará ter instalado em sua máquina:
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔧 Passo a Passo
 
-## Learn More
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/owledw/ab1-web1-patinhas.git
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Acessar a pasta do projeto:**
+   ```bash
+   cd ab1-web1-patinhas
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Instalar as dependências:**
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+4. **Executar a aplicação:**
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Acessar no navegador:**
+   O projeto abrirá automaticamente no endereço [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 Licença e Autoria
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Projeto desenvolvido para a disciplina de **Projeto Web I**.  
+Inspirado e dedicado às ações de resgate e acolhimento em Penedo/AL.
