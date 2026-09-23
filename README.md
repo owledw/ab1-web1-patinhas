@@ -1,4 +1,4 @@
-# 🐾 Patinhas - Plataforma de Adoção de Animais
+# Patinhas 🐾 - Plataforma de Adoção de Animais
 
 O **Patinhas** é um sistema web voltado para conectar animais disponíveis para adoção a potenciais adotantes conscientes no município de Penedo (AL). O projeto visa centralizar a divulgação de cães e gatos resgatados, otimizando o trabalho de ONGs e protetores independentes da região.
 
